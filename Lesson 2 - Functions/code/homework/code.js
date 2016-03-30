@@ -24,10 +24,14 @@
 
     global.UAM.addAircraft = function (newAircraftCode) {
         // function should return new aircraft object
+        var newAircraft = global.UAM.aircrafts.push({code: 'SP-XYZ', services: []});
+        return newAircraft;
     };
 
     global.UAM.removeAircraft = function (aircraftObj) {
         // !!!
+        //var newAircraft = global.UAM.aircrafts.pull({code: 'SP-XYZ', services: []});
+        //removeAircraft(newAircraft);
     };
 
     global.UAM.addWorkToAircraft = function(aircraftObj, name, timeToExxecute) {

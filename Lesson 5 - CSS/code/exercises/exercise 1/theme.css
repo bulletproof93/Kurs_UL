@@ -1,6 +1,66 @@
 .row {
     display: block;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 1000px;
 }
-
-
-
+.column
+{
+    float: left;
+    width: 500px;
+}
+h1[title^="t1"]
+{
+    background-color: black; 
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+p[nazwa^="pierwszy"]:first-letter
+{
+    font-size: 100px;
+}
+p[nazwa^="pierwszy"]
+{
+    background-color: darkgrey;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    border-radius: 0 0 10px 10px;
+    white-space: wrap;
+}
+h1[title^="t2"]
+{
+    background-color: darkorange; 
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    box-shadow:8px 8px 8px -1px darkgrey;
+}
+p[nazwa^="drugi"]
+{
+    box-shadow:8px 8px 8px -1px darkgrey;
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    border-bottom: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    white-space: wrap;
+    color: white;
+}
+p#gr
+{
+    font-weight:bold;
+    font-size:20px;
+}
