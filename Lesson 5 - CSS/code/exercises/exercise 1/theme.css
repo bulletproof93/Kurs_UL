@@ -1,15 +1,15 @@
 .row {
-    display: block;
     font-family: 'Times New Roman', Times, serif;
-    margin: auto;
-    width: 1000px;
 }
-.column
+
+.row > .column
 {
-    float: left;
-    width: 500px;
+    width: 45%;
+    padding: 10px;
+    text-align: justify;
+    display: inline-block;
 }
-h1[title^="t1"]
+#i1.column h1
 {
     background-color: black; 
     border-radius: 10px 10px 0 0;
@@ -17,12 +17,13 @@ h1[title^="t1"]
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 10px;
+    margin-right: 50px;
 }
-p[nazwa^="pierwszy"]:first-letter
+#i1.column p:first-letter
 {
     font-size: 100px;
 }
-p[nazwa^="pierwszy"]
+#i1.column p
 {
     background-color: darkgrey;
     padding-left: 20px;
@@ -31,8 +32,9 @@ p[nazwa^="pierwszy"]
     text-align: justify;
     border-radius: 0 0 10px 10px;
     white-space: wrap;
+    margin-right: 50px;
 }
-h1[title^="t2"]
+#i2.column h1
 {
     background-color: darkorange; 
     border-top: solid 5px black;
@@ -43,8 +45,9 @@ h1[title^="t2"]
     padding-bottom: 25px;
     padding-left: 10px;
     box-shadow:8px 8px 8px -1px darkgrey;
+    margin-left: 50px;
 }
-p[nazwa^="drugi"]
+#i2.column p
 {
     box-shadow:8px 8px 8px -1px darkgrey;
     background-color: green;
@@ -58,24 +61,31 @@ p[nazwa^="drugi"]
     border-right: solid 5px black;
     white-space: wrap;
     color: white;
+    margin-left: 50px;
 }
 
-p[nazwa^="trzeci"]
+#i3 p:before
 {
-    background-image: url('cat.jpg');
-    background-size: 50px 50px;
-    display: inline-block;
-    width: 50px; 
+    background: url('cat.jpg') no-repeat 0 0;
+    background-size: 50px;
+    width: 50px;
     height: 50px;
-    content:"";
+    display: inline-block;
+    content:'';   
+}
+
+#i3 p
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
 }
-p[nazwa^="drugi"]:first-line 
+#i2.column p:first-line 
 {
     font-weight : bold;
     text-shadow: 2px 2px 4px floralwhite;
 }
-h1[title^="t3"]
+#i3
 {
     text-align: center;
 }    

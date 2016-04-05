@@ -3,23 +3,19 @@
 		global.UAM = {};
 	}
 
-	function newObject() {}
-        var result = {}
-        var Person = function(name)
+	function newObject(constructor) {
+        var o = Object.create(constructor.prototype);
+        var arr = new Array();
+        
+        for(var i=1; i < arguments.length; i++)
         {
-            this.name = name;
-            return result;
-        };
-    
-        Person.prototype.sayHello = function() 
-        {
-            return "Hi I am" + this.name + '.';
+            arr.push(arguments[i]);
         }
-    
-    var obj = newObject(Person, "Krystian");
-    
-    Object.getPrototypeOf(obj);
-    obj.sayHello();
+        
+        if(constructor.apply(o, arr) != null)
+        o = constructor.apply(o, arr);
+        return o;
+    }
 
 	global.UAM.newObject = newObject;
 }(window));

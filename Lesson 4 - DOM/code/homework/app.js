@@ -101,8 +101,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // add event listeners observers for both `keydown` and `keyup` events
     // using 'keydown' and 'keyup' functions provided above
 
-    keyDown.addEventListener(keyDown, false);
-    keyUp.addEventListener(keyUp, false);
+    document.addEventListener('keyDown', keyDown, false);
+    document.addEventListener('keyUp', keyUp, false);
     // ??
     // ??
 
