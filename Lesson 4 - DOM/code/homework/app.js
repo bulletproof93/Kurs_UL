@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Add CSS classes accordingly ( ship -> ship, playArea -> playArea)
     playArea.classList.add("playArea");
-    ship.classList.add("area");
+    ship.classList.add("ship");
     // ??
     // ??
 
@@ -101,8 +101,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // add event listeners observers for both `keydown` and `keyup` events
     // using 'keydown' and 'keyup' functions provided above
 
-    document.addEventListener('keyDown', keyDown, false);
-    document.addEventListener('keyUp', keyUp, false);
+    document.addEventListener('keydown', keyDown, false);
+    document.addEventListener('keyup', keyUp, false);
     // ??
     // ??
 
